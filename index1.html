@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>My Portfolio</h1>
+
+<button onclick="toggleDarkMode()">Dark / Light Mode</button>
+
+<!-- Show Hide Content -->
+<button onclick="showContent()">Show About</button>
+<button onclick="hideContent()">Hide About</button>
+
+<div id="about">
+  <p>Hello! I am learning JavaScript.</p>
+</div>
+
+<!-- Image Slider -->
+<h2>Image Slider</h2>
+<img id="slider" src="images/img1.jpg" width="300">
+<br>
+<button onclick="prevImage()">Previous</button>
+<button onclick="nextImage()">Next</button>
+
+<!-- To Do List -->
+<h2>To Do List</h2>
+<input type="text" id="taskInput" placeholder="Enter task">
+<button onclick="addTask()">Add</button>
+<ul id="taskList"></ul>
+
+<!-- Contact Form -->
+<h2>Contact Form</h2>
+<form onsubmit="return validateForm(event)">
+<input type="text" id="name" placeholder="Enter Name"><br><br>
+<input type="text" id="email" placeholder="Enter Email"><br><br>
+<textarea id="message" placeholder="Enter Message"></textarea><br><br>
+<button type="submit">Submit</button>
+</form>
+
+<p id="error"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
